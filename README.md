@@ -2,7 +2,7 @@
 Denny Prayoga Setiawan Halim 120140012 <br>
 # Bagian 1
 1.1 <br>
-1.2 <br>
+1.2 Terdapat beberapa event yang diimplementasikan pada website seperti konfirmasi apabila ingin melakukan submit, selain itu juga terdapat hightlight input jika sedang melakukan input nama / nim dan juga hilangnya highlight apabila kita sudah tidak lagi berada pada input nama / nim<br>
 # Bagian 2
 2.1 <br>
 2.2 <br>
