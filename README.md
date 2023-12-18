@@ -15,7 +15,7 @@ Website UAS Pemweb : https://ra120140012.000webhostapp.com/index.html <br>
 4.1 Tidak menggunakan session start<br>
 4.2 Tidak menggunakan cookie<br>
 # Bagian Bonus
-1. Langkah - langkah yang dilakukan untuk meng-host aplikasi web ini adalah untuk <br>
+1. Langkah - langkah yang dilakukan untuk meng-host aplikasi web ini adalah untuk mendaftar ke web 000WebHost, melanjutkan membuat website, setelah itu memasukkan file yang telah dibuat ke dalam folder public html. Setelah itu dapat mengakses dashboard untuk membuat database dan table.<br>
 2. Penyedia hosting web yang menurut saya paling cocok untuk aplikasi web saya adalah 000WebHost dikarenakan akses yang mudah dan juga tanpa adanya biaya yang digunakan untuk melakukan hosting website<br>
 3. Cara saya memastikan keamanan aplikasi web yang saya host adalah untuk memastikan website tidak dapat digunakan untuk beberapa eksploit keamanan seperti sql injection dan lainnya dengan menambahkan langkah-langkah seperti membatasi input dan lainnya. Selain itu juga terdapat fitur keamanan pada penyedia hosting web yang bisa digunakan seperti melakukan blok ip mencurigakan dan lainnya. <br>
-4. Konfigurasi Server yang saya gunakan adalah : <br>
+4. Konfigurasi Server yang saya gunakan adalah : Bahasa yang digunakan adalah PHP, dan beberapa Javascript , Untuk database management menggunakan mySQL<br>
