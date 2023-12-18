@@ -2,7 +2,7 @@
 Denny Prayoga Setiawan Halim 120140012 <br>
 Website UAS Pemweb : https://ra120140012.000webhostapp.com/index.html <br>
 # Bagian 1
-1.1 Terdapat<br>
+1.1 Terdapat Halaman Home dan Table dengan Home yang berisikan form tentang data mahasiswa dan Table akan menampilkan semua data yang telah diinputkan ke database<br>
 1.2 Terdapat beberapa event yang diimplementasikan pada website seperti konfirmasi apabila ingin melakukan submit, selain itu juga terdapat hightlight input jika sedang melakukan input nama / nim dan juga hilangnya highlight apabila kita sudah tidak lagi berada pada input nama / nim dan event lain-lainnya.<br>
 # Bagian 2
 2.1 Pada halaman awal, metode POST digunakan untuk mengambil data yang diinputkan dari pengguna untuk nantinya dilanjutkan disimpan ke database beserta mengambil ip dan browser yang digunakan<br>
