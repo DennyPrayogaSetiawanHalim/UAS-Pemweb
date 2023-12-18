@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS Pemweb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    function highlightInput(tes){
+        tes.style.background = "lightblue";
+    }
+    function backgroundWarnaInput(tes){
+        tes.style.background = "white";
+    }    
+    function confirmForm(){
+        var result = confirm('Apakah anda yakin untuk submit ?');
+        if (result == false){
+            event.preventDefault();
+        }
+    }
+    function checkDataForm(){
+        document.getElementById("namaShow").className = 'tes4';
+        document.getElementById("nimShow").className = 'tes4';
+        document.getElementById("genderShow").className = 'tes4';
+        document.getElementById("laptopShow").className = 'tes4';
+        document.getElementById("motorShow").className = 'tes4';
+        document.getElementById("mobilShow").className = 'tes4';
+
+        document.getElementById("namaShow").innerHTML = document.getElementById("nama").value;
+        document.getElementById("nimShow").innerHTML = document.getElementById("nim").value;
+        document.getElementById("genderShow").innerHTML = document.querySelector('input[name="gender"]:checked').value;
+        document.getElementById("laptopShow").innerHTML = document.querySelector('input[name="laptop"]:checked').value;
+        document.getElementById("motorShow").innerHTML = document.querySelector('input[name="motor"]:checked').value;
+        document.getElementById("mobilShow").innerHTML = document.querySelector('input[name="mobil"]:checked').value;
+    }
+    function checkForm(){
+        const nama = document.getElementById("nama").value;
+        const nim = document.getElementById("nim").value;
+        const gender = document.querySelector('input[name="gender"]:checked').value;
+        const punyaLaptop = document.getElementById("punyaLaptop").value;
+        const punyaMotor = document.getElementById("punyaMotor").value;
+        const punyaMobil = document.getElementById("punyaMobil").value;
+
+        if (nama == "" || nim == ""){
+            alert("Nama atau NIM belum diisi");
+            return;
+        }
+    }
+</script>
+
+<body class="bg">
+
+    <nav class="navbar">
+        <div class="nav">
+            <div><a class="title1">Home</a></div>
+            <div><a class="title1">120140012</a></div>
+            <div><a href=dataTable.php class="title1">Table</a></div>
+        </div>
+    </nav>
+
+    <nav class="box">
+        <form class="tes" action="tambahdata.php" onsubmit="return confirmForm()" method="post">
+            <label for="nama">Nama :</label><br>
+            <input type="text" id="nama" name="nama" value="" onfocus="highlightInput(this)" onblur="backgroundWarnaInput(this)"><br><br>
+            <label for="nim">NIM : (jika terdapat error ganti nim lain)</label><br>
+            <input type="text" id="nim" name="nim" value="" onfocus="highlightInput(this)" onblur="backgroundWarnaInput(this)"><br><br>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="pria" name="gender" value="pria" checked>
+            <label for="pria">Pria</label><br>
+            <input type="radio" id="perempuan" name="gender" value="perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+            <label>Kepunyaan :</label><br>
+            <input type="checkbox" id="punyaLaptop" name="laptop" value="yes">
+            <label for="punyaLaptop">Saya Punya Laptop</label><br>
+            <input type="checkbox" id="punyaMotor" name="motor" value="yes">
+            <label for="punyaMotor">Saya Punya Motor</label><br>
+            <input type="checkbox" id="punyaMobil" name="mobil" value="yes">
+            <label for="punyaMobil">Saya Punya Mobil</label><br><br>
+            <input type="submit" value="Submit" onclick=checkForm()>
+            <input type="reset" value="Reset">
+            <input type="button" onclick=checkDataForm() value="Check">
+         </form>
+
+         <div>
+            <p class="tes2">Data yang diinput :</p>
+            <a class="tes3" id="namaShow"></a>
+            <a class="tes3" id="nimShow"></a>
+            <a class="tes3" id="genderShow"></a>
+            <a class="tes3" id="laptopShow"></a>
+            <a class="tes3" id="motorShow"></a>
+            <a class="tes3" id="mobilShow"></a>
+         </div>
+    </nav>
+
+    
+</body>
+
+</html>
